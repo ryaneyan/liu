@@ -1,0 +1,147 @@
+
+  <!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+  
+  
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+  
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+  
+.textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  background: #f1f1f1
+}
+  
+}
+</style>
+  <body>
+    <head>
+      <!-- Below the style code is opened so we can have styling built-into the html file -->
+      <style>
+        
+        /* The code below is mainly so we can vary the background from html to html file, changing the colour and size of background */
+        body {
+          background-color: #8e8e8e;
+          background-size: cover;
+        }
+      </style>
+      
+      <!-- Below the stylesheet (style.css) is referenced for the rest of the page's styling -->
+      <link rel="stylesheet" href="style.css" />
+
+      <br />
+      <br />
+
+      <!-- Below is a div element using the 'content' class which will be used for main bodies of text -->
+      <div class="content">
+        <!-- The 'span' element below is so you can have differently styled text in the same line -->
+        <h2><span >Contact Page</span></h2>
+        <br />
+        <p>
+          Please inform us of any feedback you have here
+        </p>
+        <br />
+        <form action="/action_page.php">
+  <input type="checkbox" >
+          <label> Website Issue</label><br>
+  <input type="checkbox" >
+  <label>  Account Issue</label><br>
+  <input type="checkbox">
+  <label>  Product Issue</label><br><br>
+</form>
+        <br />
+
+        <input type="text" placeholder="Name" id="fName" />
+
+        <br />
+        <br />
+
+        <input type="text" placeholder="Surname" id="sName" />
+
+        <br />
+              
+        <br />
+
+
+        <input type="text" placeholder="Email" id="email" />
+        <br />
+        <br />
+            
+        <br />
+ <div align = "center" >
+        <textarea  rows="10" cols="200" placeholder=" Comment" id="comment"></textarea>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <button type="submit" id="submit">Submit Your Data</button>
+
+        <!-- Firebase HTML Code -->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
+
+        <!-- Our local script that submits our data to Firebase -->
+        <script src="scripter.js"></script>
+      </div>
+    </head>
+  </body>
+</html>
