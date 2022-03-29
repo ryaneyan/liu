@@ -6,8 +6,8 @@
       window.location.href = "account.html"; //if right send user to account.html
     } else { //if its wrong send alert
       {
-        alert("wrong keyword entry");
-        return false;
+        alert("wrong keyword entry"); //alers the user of wrong entry
+        return false; //returns to the page
       }
     }
   }

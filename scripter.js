@@ -29,6 +29,7 @@ function insertRecord() {
   const nameBoxValue = nameBox.value;
   nameBox.value = "";
   nameBox.focus();
+  //creates var with value = to input fName
   
   const surnameBox = document.getElementById("sName");
   const surnameBoxValue = surnameBox.value;
@@ -51,3 +52,4 @@ const data = myDB.push();
 data.set({name:nameBoxValue, surname:surnameBoxValue, email:emailBoxValue, comment:commentBoxValue})
 
 }
+//compiles all prior data and once button is pressed sends it to firebase
